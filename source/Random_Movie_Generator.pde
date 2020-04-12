@@ -1,9 +1,3 @@
-import java.text.SimpleDateFormat;  
-import java.util.Date;  
-import java.util.TimeZone;
-import java.text.SimpleDateFormat;  
-import java.util.Date;  
-import java.text.ParseException;
 JSONObject json;
 PrintWriter output;
 PImage img,IMDB_logo;
@@ -47,8 +41,8 @@ void setup(){
   size(600,600);
   background(51);
   output = createWriter("json.txt"); 
-   table = loadTable("Movies.csv", "header");
-   int i=0;
+   table = loadTable("https://docs.google.com/spreadsheets/d/e/2PACX-1vR9ZCT42ep0qg9gyILlvkb7r8HOdN7uTWAZbf7dkaJd57qknJmYUsnAX5x63QWfltZ_TtnY8H1PHBU-/pub?gid=431153952&single=true&output=csv", "header,csv");
+   //int i=0;
     for (TableRow row : table.rows()){
       String title = row.getString("Title");
       String ID      = row.getString("Const");
