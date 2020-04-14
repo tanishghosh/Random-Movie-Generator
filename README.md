@@ -1,6 +1,6 @@
 ## Random Movie Generator
 
-Java Application using Processing 3
+Java Application using Processing 3 <br>
 Info about Processing [[link]](https://en.wikipedia.org/wiki/Processing_(programming_language))
 
 ## Requirements
